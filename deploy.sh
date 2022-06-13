@@ -3,6 +3,7 @@ echo "start deployment..."
 # abort on errors
 set -e
 
+rm -rf dist
 yarn build
 cd dist
 
