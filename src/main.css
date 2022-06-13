@@ -12,11 +12,11 @@
 
 @layer components {
   .page-container {
-    @apply container mx-auto p-4;
+    @apply container mx-auto p-4 lg:w-2/3;
   }
 
   .page-wrapper {
-    @apply p-4 bg-slate-200 rounded-lg;
+    @apply p-4 bg-slate-200 rounded-lg shadow;
   }
 
   .btn-primary {
@@ -27,7 +27,7 @@
 /* we will explain what these classes do next! */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .fade-enter-from,
@@ -37,7 +37,7 @@
 
 .flip-list-enter-active,
 .flip-list-leave-active {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .flip-list-enter-from,

@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
+  import { reactive } from 'vue'
 
-interface Props {
-  active: string,
-}
+  interface Props {
+    active: string
+  }
 
-const { active } = (defineProps<Props>())
+  const { active } = defineProps<Props>()
 
-const emit = defineEmits(['toggle-active'])
+  const emit = defineEmits(['toggle-active'])
 
-const tabOptions: string[] = ['all', 'todo', 'done']
+  const tabOptions: string[] = ['all', 'todo', 'done']
 </script>
 
 <template>
@@ -17,12 +17,7 @@ const tabOptions: string[] = ['all', 'todo', 'done']
     <div
       v-for="item in tabOptions"
       :key="item"
-      class="
-        grow py-1
-        text-center text-cyan-700 uppercase rounded-t-lg
-        border-solid border-b-2 border-cyan-700
-        cursor-pointer transition duration-300
-      "
+      class="grow py-1 text-center text-cyan-700 uppercase rounded-t-lg border-solid border-b-2 border-cyan-700 cursor-pointer transition duration-300"
       :class="{ '!text-teal-100 bg-cyan-700': item === active }"
       @click.prevent="emit('toggle-active', item)"
     >

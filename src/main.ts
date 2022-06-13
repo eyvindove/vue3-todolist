@@ -4,6 +4,4 @@ import Router from './router'
 
 import './main.css'
 
-createApp(App)
-  .use(Router)
-  .mount('#app')
+createApp(App).use(Router).mount('#app')

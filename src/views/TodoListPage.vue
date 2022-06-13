@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import TodoListHeader from '@/components/TodoListHeader.vue'
-import TodoList from '@/components/TodoList.vue'
-import TodoListFooter from '@/components/TodoListFooter.vue'
+  import TodoListHeader from '@/components/TodoListHeader.vue'
+  import TodoList from '@/components/TodoList.vue'
+  import TodoListFooter from '@/components/TodoListFooter.vue'
 </script>
 
 <template>

@@ -1,12 +1,6 @@
-import {
-  createRouter,
-  createWebHistory,
-  RouteRecordRaw,
-} from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
-const routes: Array<
-  RouteRecordRaw
-> = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
@@ -21,6 +15,11 @@ const routes: Array<
     path: '/about',
     name: 'about',
     component: () => import('../views/AboutPage.vue'),
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'notFound',
+    component: () => import('@/views/NotFoundPage.vue'),
   },
 ]
 
